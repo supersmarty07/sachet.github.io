@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sachet Portfolio</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/footer.png"
+          alt="Sachet Logo"
+          class="nav__logo"
+          id="logo"
+          designer="Sachet"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Education</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Work Experience</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <!-- <h1 onclick="alert('HTML alert')"> -->
+        <h1>
+          Graduate with academic
+          <!-- Green highlight effect -->
+          <span class="highlight">experience</span>
+          <br />in
+          <span class="highlight">IT</span>
+        </h1>
+        <h4>Javascript Developer && React Developer</h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img
+          src="img/file.png"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Education</h2>
+        <h3 class="section__header">
+          Graduated from Victoria University, Sydney with Bachelor of
+          Information Technology.
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/digital-lazy.jpg"
+          data-src="img/Course.png"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">University Education</h5>
+          <p>
+            Graduated from Victoria University in 2021 with GPA 5.8. I hold RPL
+            from Southern Cross University having studies there for 2 semesters.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Productive Learning</h5>
+          <p>
+            I learnt Software Engineering and immersed into diverse field of IT
+            through my University. In addition, I have gained skills and
+            certificates through various reputable sources like Udemy,
+            freeCodeCamp, LinkedIn, etc
+          </p>
+        </div>
+        <img
+          src="img/grow-lazy.jpg"
+          data-src="img/grow.jpg"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/card-lazy.jpg"
+          data-src="img/hands.png"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Hands-on Learning</h5>
+          <p>
+            I believe learning is the most effective when accompanied with
+            hands-on implementation. Therefore, I have several projects on my
+            Github repo which are the projects I have worked on for the past 3
+            years.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Work Experience</h2>
+        <h3 class="section__header">
+          Make it right, make it work and make it fast.
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="
+              btn
+              operations__tab operations__tab--1 operations__tab--active
+            "
+            data-tab="1"
+          >
+            <span>01</span>Woolworths Online Service
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Woolworths Customer Service
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Victoria University, Internship
+          </button>
+        </div>
+        <div
+          class="
+            operations__content
+            operations__content--1
+            operations__content--active
+          "
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Manage Online Orders and Resolve Customer Enquiries.
+          </h5>
+          <p>
+            Emphasize customer satisfaction implementing company policies and
+            promotions. Maintained customer happiness with forward-thinking
+            strategies focused on addressing customer needs and resolving
+            concerns
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Primary customer support to internal and external customers in
+            fast-paced environment.
+          </h5>
+          <p>
+            Consult with Managers to resolve discrepancies and create effective
+            solutions for customer complaints. Trained new associates on cash
+            register operations and lead the team most effective way
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Worked with Medical Health Registration System.
+          </h5>
+          <p>
+            Built a working prototype of the registration system that can be
+            implemented in 53 Commonwealth countries. Worked with modern
+            technologies to meet the complex needs of the companies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">References</h2>
+        <h3 class="section__header">
+          Having always delivered Quality work, I expanded my Networking.
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Respectful and Determined</h5>
+            <blockquote class="testimonial__text">
+              He is always respectful and treats other with great dignity. Mr
+              Thapa has a very good working relationship with other fellow
+              students.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Rama Menon</h6>
+              <p class="testimonial__location">
+                Woolworths Supermarket, Strathfield
+              </p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Dedicated, Caring and Skilled Student
+            </h5>
+            <blockquote class="testimonial__text">
+              In all of my observations of Mr Thapa, he has always demonstrated
+              exceptional learning skills regardless of online or in-class
+              learning platform and diversity of learning levels. Mr Thapa
+              always ensures that he achieves success by challenging his
+              abilities in order to encourage as much growth and development as
+              possible.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Dr. Muhammad Rehman</h6>
+              <p class="testimonial__location">Victoria University, Sydney</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">A person delighted to work with</h5>
+            <blockquote class="testimonial__text">
+              I am delighted to hear that Mr Thapa is pursuing his goals to go
+              further in Information Technology. I believe he possesses many of
+              the qualities that will make him very successful asset to any
+              organization.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Tarek Meheta</h6>
+              <p class="testimonial__location">BP, Camperdown</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          I care deeply about the code I write and the effect my work has on the
+          overall project.
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Get in touch with me today!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">University Education</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Productive Learning</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Hands-On Learning</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Woolworths Customer Service</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Woolworths Online Service</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">BP Camperdown</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact</a>
+        </li>
+      </ul>
+      <img src="img/footer.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://www.linkedin.com/in/sachet-thapa-59531a1b6/"
+          >Sachet Thapa</a
+        >
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Dummy Form <br />
+        Contact me at
+        <span class="highlight">elohistsachet007@gmail.com</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
